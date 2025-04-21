@@ -4,4 +4,6 @@ return {
     { "tpope/vim-fugitive" },
     { "tpope/vim-rhubarb" },
     { "tpope/vim-commentary" },
+    { "tpope/vim-jdaddy" },
+    { "tpope/vim-apathy" },
 }
