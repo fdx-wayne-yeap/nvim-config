@@ -1,2 +1,48 @@
 return {
+    { 
+        "nvim-treesitter/nvim-treesitter",
+        keys = {
+            { "<c-space>", desc = "Increment Selection" },
+            { "<bs>", desc = "Decrement Selection", mode = "x" },
+        },
+        auto_install = true,
+        ensure_installed = {
+            "bash",
+            "c",
+            "diff",
+            "html",
+            "javascript",
+            "jsdoc",
+            "json",
+            "jsonc",
+            "lua",
+            "luadoc",
+            "luap",
+            "markdown",
+            "markdown_inline",
+            "printf",
+            "python",
+            "query",
+            "regex",
+            "toml",
+            "tsx",
+            "typescript",
+            "vim",
+            "vimdoc",
+            "xml",
+            "yaml",
+        },
+        incremental_selection = {
+            enable = true,
+            keymaps = {
+                init_selection = "<C-space>",
+                node_incremental = "<C-space>",
+                scope_incremental = false,
+                node_decremental = "<bs>",
+            },
+        },
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+    },
 }
